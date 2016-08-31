@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> Calculadora sencilla</title>
+
+<script>
+function calcular(){
+    var num1= document.calc.num1.value
+    var num2= document.calc.num2.value
+    var operador = document.calc.operador.value
+    var resultado = eval(num1 + operador + num2)
+    document.calc.resultado.value = resultado
+}
+</head>
+<body>
+
+<form name="calc">
+<input type="Text" name="num1" value="0" size="12"><a>  </a>
+<select name="operador" style="width:57px; margin-right:3px;">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">x</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+<input type="Text" name="num2" value="0" size="12">
+<input type="Button" name="" value="=" onclick="calcula()">
+<input type="Text" name="resultado" value="0" size="12">
+</form>
+</body>
+
+</html>
